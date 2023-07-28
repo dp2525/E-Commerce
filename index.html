@@ -4,12 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="../E-Commerce/css/header.css" />
+    <link rel="stylesheet" href="../E-Commerce/css/footer.css" />
 </head>
 <body>
     <header>
         <div class="logo">
           <a href="./index.html"><img src="../E-Commerce/images/logo.jpg" /></a>
         </div>
-      </header>
+        <nav class="nav-container">
+          <a href="./product-list.html" id="products" class="nav-items products">Products</a>
+          <div id="products-modal" class="products-modal">
+            <div class="dress-categories">
+              <a href="./product-list.html?category=men" id="men" class="categ-name active-sub">
+                Men
+              </a>
+              <a href="./product-list.html?category=women" id="dog" class="categ-name">
+                Women
+              </a>
+              <a href="./product-list.html?category=kids" id="kids" class="categ-name">
+                Kids
+              </a>
+            </div>
+            <div class="dress-subcategories">
+              <div class="sub-container">
+                <a href="./product-list.html?category=for_men" class="sub"  id="sub-food">
+                  <div class="sub-text">
+                    <span>Casuals</span>
+                    <div class="sub-divider"></div>
+                    <span class="sub-sub-text">Shirts</span><br>
+                    <span class="sub-sub-text">Pants</span><br>
+                    <span class="sub-sub-text">...and more!</span>
+                  </div>
+                </a>
+                <a href="./product-list.html?category=cat_treat"  class="sub" id="sub-treat">
+                  <div class="sub-text">
+                    <span>Occasional</span>
+                    <div class="sub-divider"></div>
+                    <span class="sub-sub-text">Suits & Blazers</span><br>
+                    <span class="sub-sub-text">Kurtas</span><br>
+                    <span class="sub-sub-text">...and more!</span>
+                  </div>
+                </a>
+                <a href="./product-list.html?category=cat_supply" class="sub" id="sub-supply">
+                  <div class="sub-text">
+                    <span>Accessories</span>
+                    <div class="sub-divider"></div>
+                    <span class="sub-sub-text">Belts</span><br>
+                    <span class="sub-sub-text">Shoes</span><br>
+                    <span class="sub-sub-text">...and more!</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="category-image">
+              <img id="category-image" src="../E-Commerce/images/coat.jpg" alt="dress-image">
+            </div>
+          </div>
+          <a class="nav-items" href="./about.html">About Us</a>
+          <a class="nav-items" href="./contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <footer class="footer-wrapper">
+      <span>&copy; 2023, FSDT | Lambton College in Toronto - Winter 2023.</span>
+      <div class="social-media">
+        <a href="" target=”_blank”><img src="../E-Commerce/assets/icons8-facebook-30.png" /></a>
+        <a href="" target=”_blank”><img src="../E-Commerce/assets/icons8-instagram-30.png" /></a>
+      </div>
+    </footer>
 </body>
 </html>
