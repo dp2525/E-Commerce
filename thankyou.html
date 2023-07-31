@@ -76,8 +76,72 @@
         <a class="nav-items" href="./about.html">About Us</a>
         <a class="nav-items" href="./contact.html">Contact Us</a>
       </nav> 
+      <div id="search-wrapper" class="search-wrapper">
+        <form class="search-bar">
+          <input type="text" 
+            onfocus="this.placeholder = 'Looking for something?'" 
+            onblur="this.placeholder = ''" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Looking for something?" />
+          <span id="search" class="search-icon"><img src="assets/search copy.png" /></span for="search">
+        </form>
+      </div>
+      <div class="account-wrapper">
+        <div id="myaccount-wrapper" class="myaccount-wrapper">
+          <button id="myaccount" class="myaccount">
+            <a href="#"><img id="user-icon" src="assets/user copy.png" /></a>
+          </button>
+        </div>
+        <div id="myaccount-modal" class="myaccount-modal">
+          <div class="account-signin">
+            <h5>Sign In</h5>
+            <div class="form-container">
+              <label for="uname">Username/Email:</label>
+              <input id="uname" type="text" name="uname"/>
+              <label for="pword">Password:</label>
+              <input id="pword" type="password" name="pword"/>
+              
+              <a href="./forgotPassword.html">
+                <label for="forgot-pword" class="forgot-pword">
+                  Forgot Password?
+                </label>
+              </a>
+              <div class="btn-container">
+                <button id="login-btn" type="submit" onclick="login()">Login</button>
+              </div>
+              
+              <a href="./registration.html">
+                <label for="register" class="register">
+                  Create Account
+                </label>
+              </a>
+            </div>
+          </div>
+          <div class="account-profile">
+            <h5>Welcome!</h5>
+            <div class="form-container">
+              <a href="./user-profile.html">
+                <label for="profile" class="profile">
+                  User Profile
+                </label>
+              </a>
+              <div class="btn-container">
+                <button id="logout-btn" type="submit" onclick="logout()">Log out</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
       
-     
+      <div id="cart-wrapper" class="cart-wrapper">
+        <button class="cart">
+          <a href="./shoppingcart.html"><img id="cart-icon" src="assets/cart 2 copy.png" /></a>
+        </button>
+      </div>
+    </header> 
+  
     <!-- page content starts here -->
     <main class="content-wrapper">
         <div class="thankyou-container">
