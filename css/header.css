@@ -1,0 +1,370 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/poppins-medium-webfont.ttf);
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: "Poppins";
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    transition: 0.3s;
+  }
+
+  button:hover {
+    filter: brightness(1.2);
+  }
+
+  .container {
+    min-height: 65vh;
+  }
+  
+  /* HEADER */
+  
+  header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 8px solid #4F0341;
+  }
+  
+  .nav-container {
+    flex-grow: 2;
+    padding: 0 2%;
+  }
+  
+  .nav-items {
+    padding: 10px;
+    color:#4F0341;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  a.nav-items:hover {
+    /* background-color: rgb(237, 237, 237); */
+    color: #9165d8;
+    /* border-radius: 5px;  */
+  }
+  
+  .logo {
+    padding: 1.5em 0 0.8em 3em;
+  }
+  
+  .logo img {
+    width: 150px;
+  }
+  
+  .search-wrapper {
+    margin-right: 10px;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 25px;
+    border: 1px solid #4F0341;
+  }
+  
+  .expand {
+    width: 240px !important;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .search-input {
+    border: 0;
+    overflow: hidden;
+    transition: 0.4s;
+    width: 0px;
+    outline: none;
+    margin-left: 15px;
+  }
+  
+  .search-wrapper form input::placeholder {
+    font-size: 14px;
+  }
+  
+  .search-icon {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    margin-left: -18px;
+  }
+  
+  .search-icon img {
+    width: 17px;
+    max-height: 100%;
+  }
+  
+  .myaccount-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .myaccount-modal {
+      display: none;
+      opacity: 0;
+      width: 250px;
+      position: absolute;
+      z-index: 2;
+      margin-left: -160px;
+      padding: 10px;
+      transition: 0.3s;
+  }
+  
+  .myaccount-modal::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 27%;
+    top: 0px;
+    border-bottom: 5px solid #000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+
+  .account-signin, .account-profile {
+    border: 1px solid#4F0341;
+    background-color: white;
+    padding: 0 15px;
+  }
+
+  .account-profile {
+    text-align: center;
+  }
+
+  .profile {
+    cursor: pointer;
+  }
+
+  .form-container{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .form-container input {
+    width: 100%;
+    margin: 5px 0 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid#4F0341;
+    outline: none;
+  }
+
+  .form-container label {
+    font-size: 12px;
+  }
+
+  .form-container button {
+    margin: 10px 0;
+    width: 95px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color:#4F0341;
+    cursor: pointer;
+  }
+
+  .forgot-pword {
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .btn-container #logout-btn {
+    margin-top: 0 !important;
+  }
+
+  .register {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  .btn-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .btn-container button {
+    transition: 0.3s;
+  }
+  
+  .products-modal {
+    display: none;
+    height: 300px;
+    width: 70%;
+    position: absolute;
+    z-index: 2;
+    padding: 10px;    
+    margin-top: 5px;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  
+  .products-modal::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 4%;
+  top: 0px;
+  border-bottom: 5px solid #000;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  }
+  
+  .myaccount-wrapper:hover + .myaccount-modal, 
+  .myaccount-modal:hover, .products:hover + .products-modal,
+  .products-modal:hover {
+    display: block;
+    opacity: 1;
+  }
+
+
+  .pet-categories {
+    background-color: #eccfe0;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid#4F0341;
+  }
+
+  .pet-subcategories {
+    width: 68%;
+    height: 100%;
+    position: absolute;
+    right: 20%;
+    top: 0;
+    padding: 10px;    
+    z-index: -1;
+  }
+
+  .category-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 21%;
+    height: 100%;
+    padding: 10px 0;
+  }
+
+  .category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top: 1px solid#4F0341;
+    border-right: 1px solid#4F0341;
+    border-bottom: 1px solid#4F0341;
+  }
+
+  .sub-container {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 10px;
+    cursor: pointer;
+    padding: 12px 0 10px 20px;
+    border: 1px solid#4F0341;
+    color:#4F0341;
+  }
+
+  .sub-container .sub {
+    width: 30%;
+  }
+
+  .sub-container .sub img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px 0;
+  }
+
+  .sub-text {
+    margin: 0 auto;
+  }
+
+  .sub-sub-text {
+    font-size: 10px;
+  }
+
+  .sub-divider {
+    border: 1px solid;
+    width: 70%;
+    margin: 5px auto;
+  }
+
+  .categ-name {
+    color:#4F0341;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .active-sub {
+    background-color: #fff;
+    color: #cd6c3c;
+  }
+
+  .cart-wrapper {
+    padding-right: 3em;
+  }
+  
+  .cart, .myaccount {
+    background-color: transparent;
+    border: 0;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  .cart-wrapper .cart img, .myaccount img {
+    width: 25px;
+    transition: 0.3s;
+  }
+  
