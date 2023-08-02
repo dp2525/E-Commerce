@@ -1,4 +1,5 @@
 let slideIndex = 1;
+showSlides();
 
 // Next/previous controls
 function plusSlides(n) {
@@ -11,6 +12,7 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
+  // debugger;
   let slides = $(".mySlides");
 
   let dots = $(".dot");

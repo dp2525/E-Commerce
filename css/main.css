@@ -47,7 +47,7 @@ a:link {
 }
 
 /* Hide the images by default */
-.mySlides {
+.hidden {
   display: none;
 }
 
