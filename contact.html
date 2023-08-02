@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Us</title>
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <script src="js/vendor/jquery-3.5.1.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/users.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body id="body">
+  <!-- header contains logo, navigation, popups on hover -->
+  <header>
+    <div class="logo">
+     <a href="./index.html"><img src="images/logo.png" /></a> 
+    </div>
+     <nav class="nav-container">
+      <a href="./product-list.html" id="products" class="nav-items products">Categories</a>
+      <div id="products-modal" class="products-modal">
+        <div class="pet-categories">
+          <a href="./product-list.html?category=women" id="women" class="categ-name active-sub">
+            Women
+          </a>
+          <a href="./product-list.html?category=men" id="men" class="categ-name">
+            Men
+          </a>
+          <a href="./product-list.html?category=kid" id="kid" class="categ-name">
+            Kids
+          </a>
+        </div>
+        <div class="pet-subcategories">
+          <div class="sub-container">
+            <a href="./product-list.html?category=women_clothes" class="sub"  id="sub-clothes">
+              <div class="sub-text">
+                <span>Clothes</span>
+                <div class="sub-divider"></div>
+                <span class="sub-sub-text">Casual Wear</span><br>
+                <span class="sub-sub-text">Formal Wear</span><br>
+                <span class="sub-sub-text">...and more!</span>
+              </div>
+              <img id="clothes" src="images/women_c.jpg" alt="clothes">
+            </a>
+            <a href="./product-list.html?category=women_footwear"  class="sub" id="sub-footwear">
+              <div class="sub-text">
+                <span>Footwear</span>
+                <div class="sub-divider"></div>
+                <span class="sub-sub-text">Casual Shoes</span><br>
+                <span class="sub-sub-text">Formal Shoes</span><br>
+                <span class="sub-sub-text">...and more!</span>
+              </div>
+              <img id="footwear" src="images/women_f.jpg" alt="footwear">
+            </a>
+            <a href="./product-list.html?category=women_accessories" class="sub" id="sub-accessories">
+              <div class="sub-text">
+                <span>Accessories</span>
+                <div class="sub-divider"></div>
+                <span class="sub-sub-text">Toys</span><br>
+                <span class="sub-sub-text">Belts</span><br>
+                <span class="sub-sub-text">...and more!</span>
+              </div>
+              <img id="accessories" src="images/women_a.jpg" alt="accessories">
+            </a>
+          </div>
+        </div>
+        <div class="category-image">
+          <img id="category-image" src="images/girl.png" alt="girl-image">
+        </div>
+      </div>
+      <a class="nav-items" href="./about.html">About Us</a>
+      <a class="nav-items" href="./contact.html">Contact Us</a>
+    </nav> 
+    <div id="search-wrapper" class="search-wrapper">
+      <form class="search-bar">
+        <input type="text" 
+          onfocus="this.placeholder = 'Looking for something?'" 
+          onblur="this.placeholder = ''" 
+          id="search-input" 
+          class="search-input" 
+          placeholder="Looking for something?" />
+        <span id="search" class="search-icon"><img src="assets/search copy.png" /></span for="search">
+      </form>
+    </div>
+    <div class="account-wrapper">
+      <div id="myaccount-wrapper" class="myaccount-wrapper">
+        <button id="myaccount" class="myaccount">
+          <a href="#"><img id="user-icon" src="assets/user copy.png" /></a>
+        </button>
+      </div>
+      <div id="myaccount-modal" class="myaccount-modal">
+        <div class="account-signin">
+          <h5>Sign In</h5>
+          <div class="form-container">
+            <label for="uname">Username/Email:</label>
+            <input id="uname" type="text" name="uname"/>
+            <label for="pword">Password:</label>
+            <input id="pword" type="password" name="pword"/>
+            
+            <a href="./forgotPassword.html">
+              <label for="forgot-pword" class="forgot-pword">
+                Forgot Password?
+              </label>
+            </a>
+            <div class="btn-container">
+              <button id="login-btn" type="submit" onclick="login()">Login</button>
+            </div>
+            
+            <a href="./registration.html">
+              <label for="register" class="register">
+                Create Account
+              </label>
+            </a>
+          </div>
+        </div>
+        <div class="account-profile">
+          <h5>Welcome!</h5>
+          <div class="form-container">
+            <a href="./user-profile.html">
+              <label for="profile" class="profile">
+                User Profile
+              </label>
+            </a>
+            <div class="btn-container">
+              <button id="logout-btn" type="submit" onclick="logout()">Log out</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="cart-wrapper" class="cart-wrapper">
+      <button class="cart">
+        <a href="./shoppingcart.html"><img id="cart-icon" src="assets/cart 2 copy.png" /></a>
+      </button>
+    </div>
+  </header> 
+  <!-- page content starts here -->
+  <main class="content-wrapper" id="content-wrapper">
+    <div class="contact-us-container">
+      <h2>We'd love to hear from you</h2>
+      <p>If you have questions / clarifications from us, don't hesitate to contact us by filling out the form below</p>
+      <div class="row">
+        <div class="column">
+          <label>Name *</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="column">
+          <label>Email Address *</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="column">
+          <label>Phone Number *</label>
+          <input type="number" id="phone" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label>Subject *</label>
+          <input type="text" id="subject" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label>Description *</label>
+          <textarea id="description" required></textarea>
+        </div>
+      </div>
+      <div class="row"></div>
+      <div class="row">
+        <div class="right">
+          <div class="submit-btn-container">
+            <button id="submit-btn" type="submit" onclick="validateForm()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+
+  </main>
+  <!-- footer contains page info and social media links -->
+  <footer class="footer-wrapper">
+    <span>&copy; 2023, SHOPLINE | Lambton College in Toronto - Winter 2023.</span>
+    <div class="social-media">
+      <a href="#" target=”_blank”><img src="assets/icons8-facebook-30.png" /></a>
+      <a href="#" target=”_blank”><img src="assets/icons8-instagram-30.png" /></a>
+    </div>
+  </footer>
+</body>
+</html>
