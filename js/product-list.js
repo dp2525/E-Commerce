@@ -80,7 +80,7 @@ $(document).ready(function () {
     } else if (productCategory == "kid") {
       $(".shop-banner-img").attr("src", "images/shop-k.png");
     } else {
-      $(".shop-banner-img").attr("src", "images/products-banner.png");
+      $(".shop-banner-img").attr("src", "images/shop-ww.png");
     }
 
     // Create a div for the product card
