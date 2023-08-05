@@ -1,7 +1,7 @@
 const products = [
     {
       id: "1",
-      name: "Women Casual Tshirt",
+      name: "women casual clothes - Tshirt, women clothes",
       price: "25.99",
       quantity: "138",
       category: "women",
@@ -16,7 +16,7 @@ const products = [
     },
     {
       id: "2",
-      name: "Women Crew Neckline Tee",
+      name: "women casual clothes - Women Crew Neckline Tee- women clothes",
       price: "29.99",
       quantity: "130",
       category: "women",
@@ -34,7 +34,7 @@ const products = [
     },
     {
       id: "3",
-      name: "Women's Core Long Sleeve Tee",
+      name: "women casual clothes - Women's Core Long Sleeve Tee - women clothes",
       price: "87.99",
       quantity: "42",
       category: "women",
@@ -51,7 +51,7 @@ const products = [
     },
     {
       id: "4",
-      name: "Women Formal White Button-Down Shirt",
+      name: "women formal clothes - White Button-Down Shirt - women clothes",
       price: "39.99",
       quantity: "51",
       category: "women",
@@ -69,7 +69,7 @@ const products = [
     },
     {
       id: "5",
-      name: "women colthes - women jeans",
+      name: "women casual clothes - women jeans- women clothes",
       price: "49.99",
       quantity: "67",
       category: "women",
@@ -86,7 +86,7 @@ const products = [
     },
     {
       id: "6",
-      name: "Women clothes- formal pant",
+      name: "women formal clothes - women formal pant- women clothes",
       price: "59.99",
       quantity: "92",
       category: "women",
@@ -103,7 +103,7 @@ const products = [
     },
     {
       id: "7",
-      name: "Women Casual clothes- Skirt",
+      name: "Women casual clothes - Skirt- women clothes",
       price: "65.88",
       quantity: "36",
       category: "women",
@@ -166,7 +166,7 @@ const products = [
     },
     {
       id: "11",
-      name: "men clothes- Fashion Short Sleeve Casual Button Down Shirts, Men Casual Shirt",
+      name: "Men Casual Clothes- Fashion Short Sleeve Casual Button Down Shirts, Men Casual Shirt- men clothes",
       price: "24.99",
       quantity: "47",
       category: "men",
@@ -182,7 +182,7 @@ const products = [
     },
     {
       id: "12",
-      name: "Men Coltes- Clique Mens Stretch Formal Shirt",
+      name: "Men Formal Clothes- Clique Mens Stretch Formal Shirt- men clothes",
       price: "17.99",
       quantity: "169",
       category: "men",
@@ -198,7 +198,7 @@ const products = [
     },
     {
       id: "13",
-      name: "men clothes- Rock & Republic Men's Slim Straight Jean ",
+      name: "Men Casual Clothes- Rock & Republic Men's Slim Straight Jean- men clothes",
       price: "49.99",
       quantity: "89",
       category: "men",
@@ -216,7 +216,7 @@ const products = [
     },
     {
       id: "14",
-      name: "Men Clothes- Men’s Run Division Running T-Shirt",
+      name: "Men Casual Clothes- Men’s Run Division Running T-Shirt- men clohtes",
       price: "34.99",
       quantity: "139",
       category: "men",
@@ -233,7 +233,7 @@ const products = [
     },
     {
       id: "15",
-      name: "formal pant",
+      name: "Men Formal Clothes - formal pant- men clothes",
       price: "24.99",
       quantity: "198",
       category: "men",
@@ -308,7 +308,7 @@ const products = [
     },
     {
       id: "20",
-      name: "men accessories- Pocket Square",
+      name: "Men accessories- Pocket Square",
       price: "54.99",
       quantity: "26",
       category: "men",
@@ -322,7 +322,7 @@ const products = [
     },
     {
       id: "21",
-      name: "kids clothes-  regular wear for kid ",
+      name: "Kids Casual Clothes-  regular wear for kid- kids clothes",
       price: "15.99",
       quantity: "130",
       category: "kid",
@@ -332,12 +332,12 @@ const products = [
         "images/products/21_2.jpg",
         "images/products/21_3.jpg"
       ],
-      description: "<div>Essentials Betta Pellets are nutrient-rich and packed with colour enhancer for the most vibrant betta fish possible. Designed to resemble small floating insects and formulated for consistent growth and palatability. If used properly, will not cloud water.</div>",
+      description: "<div><p>Inspired by the style of Casino Royale. The James Bond Royale Sunglasses - Silver/Blue Edition by Barton Perreira is a high-stakes navigator, handmade in titanium.</p><p><strong>Product Details: </strong></p><ul><li>The design is made from thick gauge titanium, bi-color plating with a secret spade motif that is revealed when you breath on the lens</li><li>Presented in a case with a cleaning cloth. </li><li>Durable material for long-lasting</li></ul></div>",
       rating: "4"
     },
     {
       id: "22",
-      name: "kid clothes- Child of Mine made by Carter's Infant Boys' Sleep N Play Outfit",
+      name: "Kids Casual Clothes- Child of Mine made by Carter's Infant Boys' Sleep N Play Outfit- kids clothes",
       price: "39.99",
       quantity: "116",
       category: "kid",
@@ -347,12 +347,12 @@ const products = [
         "images/products/22_2.jpg",
         "images/products/22_3.jpg"
       ],
-      description: "<div>Essentials Betta Pellets are nutrient-rich and packed with colour enhancer for the most vibrant betta fish possible. Designed to resemble small floating insects and formulated for consistent growth and palatability. If used properly, will not cloud water.</div>",
+      description: "<div><p>Inspired by the style of Casino Royale. The James Bond Royale Sunglasses - Silver/Blue Edition by Barton Perreira is a high-stakes navigator, handmade in titanium.</p><p><strong>Product Details: </strong></p><ul><li>The design is made from thick gauge titanium, bi-color plating with a secret spade motif that is revealed when you breath on the lens</li><li>Presented in a case with a cleaning cloth. </li><li>Durable material for long-lasting</li></ul></div>",
       rating: "2"
     },
     {
       id: "23",
-      name: "Casual top wear for kids- kid clothes ",
+      name: "Casual top wear for kids- kids casual clothes- kids clothes ",
       price: "13.99",
       quantity: "128",
       category: "kid",
@@ -362,12 +362,12 @@ const products = [
         "images/products/23_2.jpg",
         "images/products/23_3.jpg",
       ],
-      description: "<div>Essentials Betta Pellets are nutrient-rich and packed with colour enhancer for the most vibrant betta fish possible. Designed to resemble small floating insects and formulated for consistent growth and palatability. If used properly, will not cloud water.</div>",
-    rating: "3"
+      description: "<div><p>Inspired by the style of Casino Royale. The James Bond Royale Sunglasses - Silver/Blue Edition by Barton Perreira is a high-stakes navigator, handmade in titanium.</p><p><strong>Product Details: </strong></p><ul><li>The design is made from thick gauge titanium, bi-color plating with a secret spade motif that is revealed when you breath on the lens</li><li>Presented in a case with a cleaning cloth. </li><li>Durable material for long-lasting</li></ul></div>",
+      rating: "3"
     },
     {
       id: "24",
-      name: "ClothesBoys 3 Piece Blazer Set with Tie for Kid",
+      name: "Kids Formal Clothes - ClothesBoys 3 Piece Blazer Set with Tie for Kid- kids clothes",
       price: "24.99",
       quantity: "133",
       category: "kid",
@@ -378,12 +378,12 @@ const products = [
         "images/products/24_3.jpg",
         "images/products/24_4.jpg"
       ],
-      description: "<div><p>Designed to keep your tank looking beautiful, Tetra Goldfish Vitamin C Enriched Flakes are made with their Clean and Clear Water Formula. The flakes are easy to digest and don't leach colour into the tank water, keeping your tank water crystal clear. Tetra Goldfish Flakes are produced with patented, health-enhancing ProCare. The precise blend of immunostimulants, vitamins, biotin and Omega-3 fatty acids is designed to strengthen fish's resistance to disease and stress while ensuring they get important nutrients at every feed.</p><p><strong>Product Details:</strong></p><ul><li>Complete diet</li><li>Top/mid feeder</li><li>Vitamin C enriched</li></ul></div>",
+      description: "<div><p>Inspired by the style of Casino Royale. The James Bond Royale Sunglasses - Silver/Blue Edition by Barton Perreira is a high-stakes navigator, handmade in titanium.</p><p><strong>Product Details: </strong></p><ul><li>The design is made from thick gauge titanium, bi-color plating with a secret spade motif that is revealed when you breath on the lens</li><li>Presented in a case with a cleaning cloth. </li><li>Durable material for long-lasting</li></ul></div>",
       rating: "4"
     },
     {
       id: "25",
-      name: " Girl Sleeveless Embroidery Princess Pageant Dresses Kid Prom Ball Gown",
+      name: " Kids Clothes- Girl Sleeveless Embroidery Princess Pageant Dresses Kid Prom Ball Gown- kids clothes",
       price: "49.99",
       quantity: "83",
       category: "kid",
@@ -393,12 +393,12 @@ const products = [
         "images/products/25_2.jpg",
         "images/products/25_3.jpg"
       ],
-      description: "<div><p>Marina Betta Buffet Blocks are the ideal vawomenion clothes. No need to worry about your Betta if you go away. The buffet block will slowly release all essential multi-vitamins and nutrients over a period of 7 days, without clouding the water.</p><p><strong>Product Details:</strong></p><ul><li>One buffet block feeds a betta for 7 days</li><li>Contains essential multi-vitamins and nutrients bettas need</li><li>Formula doesn't cloud water</li></ul></div>",
+      description: "<div><p>Inspired by the style of Casino Royale. The James Bond Royale Sunglasses - Silver/Blue Edition by Barton Perreira is a high-stakes navigator, handmade in titanium.</p><p><strong>Product Details: </strong></p><ul><li>The design is made from thick gauge titanium, bi-color plating with a secret spade motif that is revealed when you breath on the lens</li><li>Presented in a case with a cleaning cloth. </li><li>Durable material for long-lasting</li></ul></div>",
       rating: "2"
     },
     {
       id: "26",
-      name: "Kids Dough Kit, Alphabet",
+      name: "Kids Accessories - Dough Kit, Alphabet",
       price: "39.99",
       quantity: "146",
       category: "kid",
@@ -413,7 +413,7 @@ const products = [
     },
     {
       id: "27",
-      name: "kid accessories- fine cable beanie cap",
+      name: "Kids Accessories- fine cable beanie cap",
       price: "9.99",
       quantity: "100",
       category: "kid",
@@ -421,12 +421,12 @@ const products = [
       images: [
         "images/products/27_1.jpg"
       ],
-      description: "<div><ul><li>1 suet cake capacity</li><li>Cage grid designed with clinging kids in mind - feed Woodpeckers, Nuthatches, Chickadees and more</li><li>Easy-open, double-locking closure system secures tightly</li><li>Not just for suet - great for small seed cakes, nesting materials in spring &amp; oranges in summer</li><li>Solid steel construction with durable weather-resistant, powder-coated black finish</li><li>Dimensions: 5.5 L x 5.21 W x 1.6 H</li></ul></div>",
+     description: "<div><p>Inspired by the style of Casino Royale. The James Bond Royale Sunglasses - Silver/Blue Edition by Barton Perreira is a high-stakes navigator, handmade in titanium.</p><p><strong>Product Details: </strong></p><ul><li>The design is made from thick gauge titanium, bi-color plating with a secret spade motif that is revealed when you breath on the lens</li><li>Presented in a case with a cleaning cloth. </li><li>Durable material for long-lasting</li></ul></div>",
       rating: "3"
     },
     {
       id: "28",
-      name: "kid- backpack",
+      name: "Kids Accessories - backpack",
       price: "59.99",
       quantity: "131",
       category: "kid",
@@ -436,12 +436,12 @@ const products = [
         "images/products/28_2.jpg",
   
       ],
-      description: "<div>Prevue Pet Products Parakeet Manor kid cage features a pull-out tray for easy cleaning and house-style roof line.  These cages include two plastic cups, two plastic perches and are designed for parakeets, canaries and other small kids. Dimensions: 12 L x 9 W x 16H</div>",
+      description: "<div><p>Inspired by the style of Casino Royale. The James Bond Royale Sunglasses - Silver/Blue Edition by Barton Perreira is a high-stakes navigator, handmade in titanium.</p><p><strong>Product Details: </strong></p><ul><li>The design is made from thick gauge titanium, bi-color plating with a secret spade motif that is revealed when you breath on the lens</li><li>Presented in a case with a cleaning cloth. </li><li>Durable material for long-lasting</li></ul></div>",
       rating: "0"
     },
     {
       id: "29",
-      name: "kid accessories-toy",
+      name: "Kids Accessories - toy",
       price: "18.99",
       quantity: "200",
       category: "kid",
@@ -451,12 +451,12 @@ const products = [
         "images/products/29_2.jpg",
         "images/products/29_3.jpg"
       ],
-      description: "<div><p>Perky-Pet Holly Berry Gilded Chalet Wild kid Feeder features a circular perch that invites kids to feed from all angles. This attractive plastic feeder has a lid with an embossed holly berry pattern and is footweared with a UV inhibitor to protect it from the sun and prevent fading. This gorgeous feeder can hold up to 2 lb of seed and with its patented Sure-Lock cap system it will reduce your amount of fill times.</p> <p><strong>Product Details: </strong></p> <ul> <li>Made of durable plastic with an elegant antique gold finish</li> <li>Sure-Lock cap locks lid in place to keep squirrels out</li> <li>Circular feeding tray allows multiple kids to feed from all angles</li> <li>Holds up to 2 lb of seed</li> </ul> <p><strong>Cleaning Instructions:</strong> With its unique twist off base it makes cleaning your feeder extremely easy. Remember to clean the feeders every two weeks with a mild soap and water solution.</p></div>",
+      description: "<div><p>Inspired by the style of Casino Royale. The James Bond Royale Sunglasses - Silver/Blue Edition by Barton Perreira is a high-stakes navigator, handmade in titanium.</p><p><strong>Product Details: </strong></p><ul><li>The design is made from thick gauge titanium, bi-color plating with a secret spade motif that is revealed when you breath on the lens</li><li>Presented in a case with a cleaning cloth. </li><li>Durable material for long-lasting</li></ul></div>",
       rating: "0"
     },
     {
       id: "30",
-      name: "kid accessories - toy",
+      name: "Kids Accessories - toy",
       price: "15.99",
       quantity: "70",
       category: "kid",
@@ -464,12 +464,12 @@ const products = [
       images: [
         "images/products/30_1.jpg"
       ],
-      description: "<div>Living World kid Bath for caged kids provides a fast and effective way to kill lice and mites. Safe and easy to use, simply point and spray on your kid.</div>",
+      description: "<div><p>Inspired by the style of Casino Royale. The James Bond Royale Sunglasses - Silver/Blue Edition by Barton Perreira is a high-stakes navigator, handmade in titanium.</p><p><strong>Product Details: </strong></p><ul><li>The design is made from thick gauge titanium, bi-color plating with a secret spade motif that is revealed when you breath on the lens</li><li>Presented in a case with a cleaning cloth. </li><li>Durable material for long-lasting</li></ul></div>",
       rating: "2"
     },
     {
       id: "31",
-      name: "men casual footwear-filp flop",
+      name: "Men Casual Footwear-filp flop- men footwear",
       price: "14.99",
       quantity: "178",
       category: "men",
@@ -477,12 +477,12 @@ const products = [
       images: [
         "images/products/31_1.jpg"
       ],
-      description: "<div><p><strong>Performatrin Ultra</strong> Hide-Free Duck Flavour Stickz are an all-natural, easily digestible alternative to Rawhide. They fulfill your mens natural chewing instincts which supports healthy teeth and gums.</p><p><strong>Product Details:</strong></p><ul><li>Recommended for moderate chewers</li><li>All-natural rawhide alternative</li><li>Easily digestible; made with real duck</li><li>Chewing supports healthy teeth and gums</li><li>Contains no artificial preservatives, colors or flavours</li></ul></div>",
+      description: "<div><p>Breathable and comfortable - The soft cotton lining and the breathable insole ensure that the little feet stay dry and feel good even after a long game day. With these rain boots, your kids will love to splash around in puddles while their feet stay warm and dry. cozy. The rain boots are designed so that your children can enjoy every moment of play!</p><p><strong>Product Details:</strong></p><ul><li>Material Type: PVC</li><li>Size & Fit: 18cm </li><li>Sole: Non-slip and durable </li>",
       rating: "2"
     },
     {
       id: "32",
-      name: "men formal footwear- formal shoes ",
+      name: "Men Formal Footwear- formal shoes- men footwear",
       price: "10.69",
       quantity: "49",
       category: "men",
@@ -496,7 +496,7 @@ const products = [
     },
     {
       id: "33",
-      name: "men casual footwear- casual shoes",
+      name: "Men Casual Footwear- casual shoes- men footwear",
       price: "69.99",
       quantity: "88",
       category: "men",
@@ -510,7 +510,7 @@ const products = [
     },
     {
       id: "34", 
-      name: "women casual footwear- high heels",
+      name: "women casual footwear- high heels- women footwear",
       price: "15.99",
       quantity: "100",
       category: "women",
@@ -525,7 +525,7 @@ const products = [
     },
     {
       id: "35",
-      name: "Earth Spirit Women's Pleated Side Zip Richmond Casual Step-in Heel Black",
+      name: "women formal footwear - Earth Spirit Women's  formal Pleated Side Zip Heel Black - women footwear",
       price: "60.49",
       quantity: "30",
       category: "women",
@@ -541,7 +541,7 @@ const products = [
     },
     {
       id: "36",
-      name: "women casual footwear- sneakers",
+      name: "women casual footwear- sneakers-  women footwear",
       price: "59.99",
       quantity: "187",
       category: "women",
@@ -556,7 +556,7 @@ const products = [
     },
     {
       id: "37",
-      name: "kids footwear- formal shoes ",
+      name: "kids formal footwear- formal shoes - kids footwear ",
       price: "28.99",
       quantity: "87",
       category: "kid",
@@ -569,7 +569,7 @@ const products = [
     },
     {
       id: "38",
-      name: "kid footwear-shoes ",
+      name: "kids casual footwear-shoes - kids footwear",
       price: "7.99",
       quantity: "101",
       category: "kid",
@@ -585,7 +585,7 @@ const products = [
     },
     {
       id: "39",
-      name: "",
+      name: "kids footwear - rain boots- kids footwear",
       price: "6.99",
       quantity: "184",
       category: "kid",
