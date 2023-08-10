@@ -166,7 +166,7 @@ const products = [
     },
     {
       id: "11",
-      name: "Men Casual Clothes- Fashion Short Sleeve Casual Button Down Shirts, Men Casual Shirt- men clothes",
+      name: "Men Casual Clothes- Short Sleeve Button Down, Men Casual Shirt- men clothes",
       price: "24.99",
       quantity: "47",
       category: "men",
@@ -337,7 +337,7 @@ const products = [
     },
     {
       id: "22",
-      name: "Kids Casual Clothes- Child of Mine made by Carter's Infant Boys' Sleep N Play Outfit- kids clothes",
+      name: "Kids Casual Clothes- made by Carter's Infant Boys' Sleep N Play Outfit- kids clothes",
       price: "39.99",
       quantity: "116",
       category: "kid",
@@ -383,7 +383,7 @@ const products = [
     },
     {
       id: "25",
-      name: " Kids Clothes- Girl Sleeveless Embroidery Princess Pageant Dresses Kid Prom Ball Gown- kids clothes",
+      name: " Kids Clothes- Girl Sleeveless Embroidery Princess Dresses Kid Prom Gown- kids clothes",
       price: "49.99",
       quantity: "83",
       category: "kid",
@@ -525,7 +525,7 @@ const products = [
     },
     {
       id: "35",
-      name: "women formal footwear - Earth Spirit Women's  formal Pleated Side Zip Heel Black - women footwear",
+      name: "women formal footwear- Earth Spirit formal Side Zip Heel Black-women footwear",
       price: "60.49",
       quantity: "30",
       category: "women",
