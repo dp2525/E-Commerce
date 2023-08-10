@@ -25,7 +25,7 @@ function getRandomInt(min, max) {
 var productId = getUrlParameter("productId");
 
 getProductById(productId).then(function (product) {
-  document.title = product.name + " - Rasvels Pet Store";
+  document.title = product.name + " - SHOPLINE";
   jQuery("#product-name").text(product.name);
   jQuery("#product-description").html(product.description);
   jQuery("#product-price").text("$" + product.price);
@@ -120,3 +120,4 @@ function addToCart(){
   item.image = "images/products/" + productId + "_1.jpg";
   addItemToCart(item);
 }
+
