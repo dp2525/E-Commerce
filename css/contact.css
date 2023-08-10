@@ -3,7 +3,7 @@ h3 {
     text-align: center;
     font-weight: bold;
     margin-bottom: 50px;
-    color: #3c0544c5;
+    color: #fff;
 }
 
 p {
@@ -15,7 +15,7 @@ p {
 }
 
 label {
-    color: #917A60;
+    color: #fff;
 }
 
 main {
@@ -27,7 +27,7 @@ main {
 
 .contact-us-container {
     margin: 20px auto 20px;
-    background-color: #e0cee0;
+    background-color: #3d253d;
     border-radius: 10px;
     display: block;
     padding: 5px;
@@ -90,9 +90,9 @@ main {
     padding: 5px;
     margin-right: 35px;
     border-radius: 5px;
-    border: none;
+/*    border: none;**/
     color: white;
-    background-color: #3c0544c5;
+    background-color: #8f4381;
     cursor: pointer;
     float: right;
     position: relative;
