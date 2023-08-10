@@ -1118,44 +1118,65 @@ textarea {
     padding-top: 20px;
     outline: 0;
 }
+/*dropdown-btn**/
+/*the container must be positioned relative:*/
 
-/*dropdown-btn*/
-.dropbtn {
-    background-color: #4F0341;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  .dropdown {
+.custom-select {
     position: relative;
-    display: inline-block;
+    font-family: Arial;
   }
-  
-  .dropdown-content {
-    display: none;
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  .select-selected {
+    background-color: #4F0341;
+  }
+
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+
+  /*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: #4F0341;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  .select-hide {
+    display: none;
   }
   
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
   }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: #c0a5bb;}
-
-
 
 @media only screen and (max-width: 1450px){
 .single-pro-content .ec-single-sales .ec-single-sales-countdown .ec-single-countdown {
