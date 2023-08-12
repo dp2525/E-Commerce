@@ -122,3 +122,31 @@ h3 {
   border-style: solid;
   border-radius: 100px;
 }
+
+
+/* Existing CSS */
+
+/* Add this media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .column {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .column img {
+    width: 100%;
+  }
+
+  .row-bottom {
+    height: auto;
+  }
+
+  .bottom-content {
+    width: 90%;
+  }
+}

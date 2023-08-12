@@ -1,5 +1,9 @@
 /* MAIN */
 
+* {
+  box-sizing: border-box;
+}
+
 a:visited,
 a:link {
   color: #4F0341;
@@ -15,21 +19,6 @@ a:link {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.cat-item img {
-  height: 200px;
-  border-radius: 100px;
-}
-
-.cat-item span {
-  margin-top: 15px;
-  font-size: 16px;
-  color: #1c2120;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .categories-container {
@@ -80,7 +69,6 @@ a:link {
   margin-bottom: 10px;
   transition: 0.4s;
 }
-
 
 @keyframes fade {
   from {
