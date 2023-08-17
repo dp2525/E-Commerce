@@ -39,7 +39,7 @@ a:link {
 
 .categories-container {
   width: 100%;
-  height: 500px;
+  height: auto;
   background-color: #f6f3f0;
   padding: 5px 0;
   border-bottom: 8px solid #4F0341;
