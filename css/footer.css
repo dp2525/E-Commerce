@@ -13,3 +13,21 @@
   .footer-wrapper span, .footer-wrapper div {
     padding: 0 55px;
   }
+
+  @media (max-width: 768px) { 
+
+    .footer-wrapper {
+      width: 100%;
+      min-height: auto;
+      background-color: #1c2120;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-wrapper span, .footer-wrapper div {
+      padding: 10px 0px ;
+    }
+  }
