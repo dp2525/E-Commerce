@@ -542,7 +542,7 @@ select {
         width: 40%;
     }
     .btn-checkout {
-        width: 100%;
+        width: auto;
     }
 
  }
@@ -553,9 +553,23 @@ select {
     }
  }
 
-/* @media (min-width: 768px) { ... }
+ @media (max-width: 890px) { 
+    .cart-content .table-content table thead > tr > th {
+        border-top: medium none;
+        color: #444444;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 15px 4px 10px;
+        text-align: left;
+        text-transform: capitalize;
+        vertical-align: middle;
+        white-space: nowrap;
+        line-height: 1;
+        letter-spacing: 0;
+    }
+  }
 
-
+/*
 @media (min-width: 992px) { ... }
 
 @media (min-width: 1200px) { ... } */
