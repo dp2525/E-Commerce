@@ -160,3 +160,27 @@ main {
 .error {
     color: red !important;
 }
+
+@media (max-width: 890px) { 
+.register-form-container {
+    background-color: #ebe3ec;
+    border-radius: 10px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+.registration-banner {
+    width: auto;
+    padding: 30px;
+    background-color: #4F0341;
+}
+}

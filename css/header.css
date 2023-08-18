@@ -392,41 +392,44 @@
   /* Additional responsive adjustments for other sections can be added here */
 }
 
-/*@media only screen and (max-width: 990px) {
-  header {
-    justify-content: center;
-    height: 25vh;
-    min-height: 150px;
-    padding: 10px;
-  }
-  nav {
-    flex-basis: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer-wrapper {
-    font-size: 14px;
-  }
-  .search-wrapper {
-    height: 30px;
-  }
-  .search-wrapper form input::placeholder {
-    font-size: 12px;
-  }
+@media (max-width: 768px) { 
   .logo {
-    padding: 0;
+    margin: auto;
+    padding: 1em 0em 0em 0em;
   }
-  .logo img {
-    width: 200px;
-  }
-  .nav-items {
-    font-size: 10px;
-  }
-  .cart-wrapper {
-    padding: 0;
-  }
-  .cart-wrapper .cart img {
-    width: 25px;
-  }
-}*/
+
+  .myaccount-modal {
+    display: none;
+    opacity: 0;
+    width: 250px;
+    position: absolute;
+    margin-left: -50px;
+    z-index: 2;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 8px solid #4F0341;
+  gap: 1em;
+}
+}
+
+@media (max-width: 420px) { 
+
+
+  .myaccount-modal {
+    display: none;
+    opacity: 0;
+    width: 250px;
+    position: absolute;
+    margin-left: 20px;
+    z-index: 2;
+    padding: 10px;
+    transition: 0.3s;
+}
+}
