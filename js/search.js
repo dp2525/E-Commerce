@@ -1,14 +1,17 @@
+/* function getUrlParameter that takes a parameter name as input, searches for that parameter in the URL's query string, 
+and returns its value if found. If the parameter is not found, it returns false.*/ 
+
 var getUrlParameter = function getUrlParameter(sParam) {
-  var sPageURL = window.location.search.substring(1),
+  var sPageURL = window.location.search.substring(1), //extracts the query string from the current URL, excluding the leading ? character.
     sURLVariables = sPageURL.split("?"),
     sParameterName,
     i;
 
   for (i = 0; i < sURLVariables.length; i++) {
-    sParameterName = sURLVariables[i].split("=");
+    sParameterName = sURLVariables[i].split("="); // splits the current URL segment into an array containing the parameter name and its value.
 
     if (sParameterName[0] === sParam) {
-      return sParameterName[1] === undefined
+      return sParameterName[1] === undefined //if parameter is not provided return true, otherwise decodes the url encoded value and return it 
         ? true
         : decodeURIComponent(sParameterName[1]);
     }
@@ -16,13 +19,16 @@ var getUrlParameter = function getUrlParameter(sParam) {
   return false;
 };
 
+
 $(document).ready(function () {
     
-  const productList = $('#product-list');
-  var searchKeyword = getUrlParameter("search");
+  const productList = $('#product-list'); // select the element with product-list
+  var searchKeyword = getUrlParameter("search"); // get the search keyword from the url parameter
 
+  //filter products based on the search keyword
   var searchProducts = products.filter(value => value.name.toLowerCase().includes(searchKeyword.toLowerCase()) || value.category.toLowerCase().includes(searchKeyword.toLowerCase()) || value.subcategory.toLowerCase().includes(searchKeyword.toLowerCase()) || value.description.toLowerCase().includes(searchKeyword.toLowerCase()) );
   
+  //display number of serch results
   $(".search-result").text(searchProducts.length + " Search results for " + searchKeyword);
   
   searchProducts.forEach((product) => {

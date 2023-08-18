@@ -1,3 +1,5 @@
+/*sParam represt the name of url parameter, function retrieves the query string from the current page's url and
+ splits it into an aaray of key-value pairs and iterates over the array to find the value of the specified paramerter*/
 var getUrlParameter = function getUrlParameter(sParam) {
   var sPageURL = window.location.search.substring(1),
     sURLVariables = sPageURL.split("&"),
@@ -16,6 +18,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
   return false;
 };
 
+//
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -30,7 +33,6 @@ getProductById(productId).then(function (product) {
   jQuery("#product-description").html(product.description);
   jQuery("#product-price").text("$" + product.price);
   jQuery("#product-quantity").text(product.quantity);
-  // var productShortDesc = product.description.replace('<p>','').replace('</p>','').replace('<div>','').replace('</div>','').substring(0,150) + "...";
   jQuery("#product-short-desc").html(product.description);
   var strHover = "";
   var strThumb = "";
@@ -87,6 +89,7 @@ getProductById(productId).then(function (product) {
   });
 
   /*----------------------------- Qty Plus Minus Button  ------------------------------ */
+  //to seletct quantity 
   var QtyPlusMinus = jQuery(".qty-plus-minus");
   QtyPlusMinus.prepend('<div class="dec ec_qtybtn">-</div>');
   QtyPlusMinus.append('<div class="inc ec_qtybtn">+</div>');
@@ -109,7 +112,7 @@ getProductById(productId).then(function (product) {
 });
 
 jQuery(document).ready(function () {});
-
+//to add products in cart 
 function addToCart(){
   var userId = 1;
   var item = {};

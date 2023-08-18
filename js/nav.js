@@ -1,5 +1,7 @@
+//boolean variabl used for search input
 var expandWidth = false;
 
+//if true, adds the "expand" cls to id serch-input, and set focus on it else it will remove the expand class from serch-input 
 var expandSearch = function () {
   if (expandWidth) {
     $("#search-input").addClass("expand").focus();
@@ -11,18 +13,22 @@ var expandSearch = function () {
   expandWidth = !expandWidth;
 };
 
+// for the id #myaccount-model sets the css 'display' property flex and visible 
 var showModal = function () {
   $("#myaccount-modal").css("display", "flex");
 };
 
+//to make it hidden
 var hideModal = function () {
   $("#myaccount-modal").css("display", "none");
 };
 
+//css filter to the id #content-wrapper, reducing brightness
 function hideBackground() {
   $("#content-wrapper").css("filter", "brightness(0.5)");
 }
 
+//resets the filter, sets to default
 function unhideBackground() {
   $("#content-wrapper").css("filter", "brightness(1.0)");
 }
@@ -101,6 +107,7 @@ function setWomenActiveCategory() {
     $("#login-btn").css("filter", "brightness(1)");
   }
 
+   //sets up various even handlers and intialization for different elements on the webpages
   $(document).ready(function() {
     expandSearch();
   

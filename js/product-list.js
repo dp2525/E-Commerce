@@ -1,5 +1,8 @@
-var getUrlParameter = function getUrlParameter(sParam) {
-  var sPageURL = window.location.search.substring(1),
+/*sParam represt the name of url parameter, function retrieves the query string from the current page's url and
+ splits it into an aaray of key-value pairs and iterates over the array to find the value of the specified paramerter*/
+
+ var getUrlParameter = function getUrlParameter(sParam) {
+var sPageURL = window.location.search.substring(1),
     sURLVariables = sPageURL.split("&"),
     sParameterName,
     i;
@@ -24,6 +27,7 @@ $(document).ready(function () {
   var productSubCategory;
   var product;
 
+  //drop down menu
   $(".categ-title i").on("click", function () {
     const categ = $(this).closest(".categ-title").find("a").text();
     var categElement = "." + categ.toLowerCase() + "-dropdown";
@@ -37,12 +41,14 @@ $(document).ready(function () {
     }
   });
 
+  //if a URL parameter called category exists, it's split into productCategory and productSubCategory based on _ 
   if (urlParameter) {
     productParameter = urlParameter.split("_");
     productCategory = productParameter[0];
     productSubCategory = productParameter[1];
   }
 
+  //loops through each product in the products array
   for (let i = 0; i < products.length; i++) {
     if (productSubCategory) {
       product = products.filter(
@@ -50,8 +56,9 @@ $(document).ready(function () {
           value.category === productCategory &&
           value.subcategory === productSubCategory
       )[i];
-      if (product.subcategory == "clothes") {
-        $(".shop-banner h1").text("CLOTHES");
+      //display banner
+      if (product.subcategory == "clothes") {  
+        $(".shop-banner h1").text("CLOTHES"); 
       } else if (product.subcategory == "footwear") {
         $(".shop-banner h1").text("FOOTWEAR");
       } else {
