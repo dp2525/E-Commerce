@@ -1,3 +1,4 @@
+//global variables for keep track of the subtoal and toal amount of cart
 var subTotal = 0;
 var totalAmount = 0;
 
@@ -37,7 +38,7 @@ function addItemToCart(item) {
   
   }
 
-
+//retrieves the user's cart data from local storage and return it as a js object
   function getAllCartItems(){
     var myJsonData = localStorage.getItem("userCart");
     var userCart = JSON.parse(myJsonData);
@@ -49,6 +50,8 @@ function addItemToCart(item) {
     console.log(cartItems);
     
   }
+
+  //recalculates and update the subtotal and toatlamount based on the items in the cart
   function updateTotal() {
     var items = getAllCartItems();
     var subTotal = 0;
@@ -60,6 +63,7 @@ function addItemToCart(item) {
     $(".total-amount").text("$" + totalAmount.toFixed(2));
   }
   
+  //for each item, creates a table row and cells for product purchase details
   function displayCart(){
     const tableContainer = $('.cart-table-content table tbody');
     var items = getAllCartItems();

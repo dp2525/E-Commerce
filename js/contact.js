@@ -1,3 +1,4 @@
+//to check fields are not empty
 function isFieldsPopulated() {
     var name = $("#name").val().length;
     var email = $("#email").val().length;
@@ -13,6 +14,7 @@ function isFieldsPopulated() {
     }
   }
   
+  //to check vaild phone number
   function isValidPhoneNumber() {
     var phone = $("#phone").val();
   
@@ -36,6 +38,7 @@ function isFieldsPopulated() {
     }
   }
   
+  //validation function for form
   function validateForm() {
     if (isFieldsPopulated() && isValidPhoneNumber() && isValidEmailAddress()) {
       window.open("./contact-success.html", "_self");
